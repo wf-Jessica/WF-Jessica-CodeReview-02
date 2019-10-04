@@ -18,5 +18,5 @@ switch (countrys) {
 	insurance = horse_power*150/(age+3)+50;
 	break;
 	}
-	document.getElementById("insur").innerHTML = name +" , your insurance costs " + insurance + " €";
+	document.getElementById("insur").innerHTML = name +" , your insurance costs " +  Math.round(insurance)+ " €";
 }
