@@ -3,6 +3,7 @@ function calculateInsurance(){
 	var insurance;
 	var horse_power= document.getElementById("hp").value;
 	var age = document.getElementById("ag").value;
+	var age1= age +3
 	var name = document.getElementById("name").value;
 switch (countrys) {
 	case "0":
@@ -15,7 +16,7 @@ switch (countrys) {
 	insurance = horse_power*120/age +100;
 	break;
 	case "3":
-	insurance = horse_power*150/(age+3)+50;
+	insurance = horse_power*150/age1 +50;
 	break;
 	}
 	document.getElementById("insur").innerHTML = name +" , your insurance costs " +  Math.round(insurance)+ " €";
